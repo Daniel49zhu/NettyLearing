@@ -6,6 +6,9 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
+/**
+ * 接收http请求，返回一个字符串，可用浏览器控制台观察
+ */
 public class TestServer {
     public static void main(String[] args) throws Exception{
         //两个事件循环组，boss接收连接，然后发送给worker
