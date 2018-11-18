@@ -9,8 +9,8 @@ import java.time.LocalDateTime;
 public class TextWebSocketFrameHandler extends SimpleChannelInboundHandler<TextWebSocketFrame> {
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, TextWebSocketFrame msg) throws Exception {
-        System.out.println("收到的消息"+msg.text());
-        ctx.channel().writeAndFlush(new TextWebSocketFrame("服务器时间："+ LocalDateTime.now()));
+        System.out.println("收到的消息:"+msg.text());
+        ctx.channel().writeAndFlush(new TextWebSocketFrame("服务器时间："+ LocalDateTime.now()+"  "+msg.text()));
     }
 
     @Override
