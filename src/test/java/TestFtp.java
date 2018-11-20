@@ -14,4 +14,5 @@ public class TestFtp {
         FTPFile[] files = ftpClient.listFiles();
         System.out.println(Arrays.toString(files));
     }
+
 }
