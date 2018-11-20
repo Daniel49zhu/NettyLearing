@@ -3,7 +3,7 @@ syntax = "proto2";
 package com.zjc.protobuf;
 
 option optimize_for = SPEED;
-option java_package = "com.zjc.netty.protobuf";
+option java_package = "com.zjc.netty.sixthexample";
 option java_outer_classname = "DataInfo";
 
 message Student  {
