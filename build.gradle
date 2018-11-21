@@ -22,5 +22,6 @@ dependencies {
     // https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java-util
     compile group: 'com.google.protobuf', name: 'protobuf-java-util', version: '3.6.1'
     // https://mvnrepository.com/artifact/org.apache.thrift/libthrift
-    compile group: 'org.apache.thrift', name: 'libthrift', version: '0.9.3', ext: 'pom'
+    compile group: 'org.apache.thrift', name: 'libthrift', version: '0.10.0'
+
 }
