@@ -8,10 +8,10 @@ public class ConcreteDecorator2 extends Decorator{
     @Override
     public void doSomething() {
         super.doSomething();
-        this.doSomething();
+        this.doAnotherThing();
     }
 
     private void doAnotherThing() {
-        System.out.println("功能B");
+        System.out.println("功能C");
     }
 }

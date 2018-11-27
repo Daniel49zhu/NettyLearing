@@ -8,7 +8,7 @@ public class ConcreteDecorator1 extends Decorator {
     @Override
     public void doSomething() {
         super.doSomething();
-        this.doSomething();
+        this.doAnotherThing();
     }
 
     private void doAnotherThing() {

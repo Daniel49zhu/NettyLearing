@@ -1,6 +1,6 @@
 package com.zjc.decorator;
 
-public class Decorator implements Component{
+public class Decorator implements Component {
     private Component component;
 
     public Decorator(Component component) {
@@ -9,6 +9,6 @@ public class Decorator implements Component{
 
     @Override
     public void doSomething() {
-
+        component.doSomething();
     }
 }
