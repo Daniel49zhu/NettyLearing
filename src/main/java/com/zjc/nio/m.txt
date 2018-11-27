@@ -1,0 +1,8 @@
+java.io中最核心的概念是流（stream）,一个流要么是输入流，要么是输出流，不可能同时既是输入流 又是输出流
+java.nio中拥有3个核心概念，Selector，Channel和Buffer，在java.nio中，我们是面向块（block）或是缓冲区（buffer）
+编程的，Buffer本身就是一块内存，底层实现上，它实际上是个数组，数据的读写都是通过Buffer来实现
+除了数组外，Buffer还提供了对数据的结构化访问方式，并且可以追踪到系统的读写过程
+Java中的8种原生类型都是有各自对应的Buffer类型，如IntBuffer，LongBuffer，ByteBuffer及CharBuffer等等
+Channel指的是可以向其写入数据或是从中读取数据的对象，它类似于java.io中的stream
+所有数据的读写都是通过Buffer来进行的，永远不会出现直接向Channel写入数据的情况，或是直接从Channel读取数据
+与Stream不同，Channel是双向的，Channel打开后可以直接进行读取和写入，由于channle是双向的，能更好的反应底层操作系统的真实情况
