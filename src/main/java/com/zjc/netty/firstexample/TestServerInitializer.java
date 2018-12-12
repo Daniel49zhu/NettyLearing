@@ -9,6 +9,8 @@ public class TestServerInitializer extends ChannelInitializer<SocketChannel> {
     @Override
     protected void initChannel(SocketChannel ch) throws Exception {
         ChannelPipeline pipeline = ch.pipeline();
+        //管道上添加编解码器
+        //名字默认会添加，也可以手动指定
         pipeline.addLast("httpServerCodec",new HttpServerCodec());
         pipeline.addLast("testHttpServlerHandler",new TestHttpServerHandler());
     }
