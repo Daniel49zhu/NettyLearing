@@ -6,8 +6,8 @@ import java.io.InputStream;
 import java.net.Socket;
 
 public class OldClient {
-    public static void main(String[] args) throws Exception{
-        Socket socket = new Socket("localhost",8899);
+    public static void main(String[] args) throws Exception {
+        Socket socket = new Socket("localhost", 8899);
 
         String fileName = "D:\\书籍\\TypeScript Language Specification.pdf";
         InputStream inputStream = new FileInputStream(fileName);
@@ -26,7 +26,7 @@ public class OldClient {
         }
 
         System.out.println("发送总字节数： " + total + ", 耗时： " + (System.currentTimeMillis() - startTime));
-
+        //output: 发送总字节数： 1695961, 耗时： 46
         dataOutputStream.close();
         socket.close();
         inputStream.close();
