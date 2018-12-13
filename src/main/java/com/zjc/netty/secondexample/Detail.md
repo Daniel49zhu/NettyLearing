@@ -1,1 +1,1 @@
-[MyServer](com.zjc.netty.secondexample.MyServer)
+[MyServer](MyServer.java)
